@@ -5,6 +5,7 @@ from mysql.connector import Error  #seperate import so access to function is eas
 #referenced from freeCodeCamp
 #establishing connection to server
 def enable_connection(name_host, name_user, password_user): #arguments function takes
+    #shuts down other existing connections so there's no multiple connections
     connection = None 
     #possible errors
     try: 
