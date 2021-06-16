@@ -2,6 +2,7 @@ import mysql.connector
 import pandas as pd
 from mysql.connector import Error  #seperate import so access to function is easily made
 
+#w = rootpassword as string
 #referenced from freeCodeCamp
 #establishing connection to server
 def enable_connection(name_host, name_user, password_user): #arguments function takes
@@ -20,3 +21,4 @@ def enable_connection(name_host, name_user, password_user): #arguments function 
         
     return connection
     #function returning to SQL Server
+    #connection = enable_connection("localhost", "root", pw) establishes that the server is connected
