@@ -2,6 +2,7 @@ import mysql.connector
 import pandas as pd
 from mysql.connector import Error  #seperate import so access to function is easily made
 
+#referenced from freeCodeCamp
 #establishing connection to server
 def enable_connection(name_host, name_user, password_user): #arguments function takes
     connection = None 
@@ -16,5 +17,5 @@ def enable_connection(name_host, name_user, password_user): #arguments function 
     except Error as unsuccessful:
         print(f"Unsuccessful:'{unsuccessful}'")
         
-    retun connection
+    return connection
     #function returning to SQL Server
