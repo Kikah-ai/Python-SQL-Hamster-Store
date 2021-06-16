@@ -8,8 +8,8 @@ def enable_connection(name_host, name_user, password_user): #arguments function 
     #possible errors
     try: 
         connection = mysql.connector.connect(
-            host = name_host
-            user = name_user
+            host = name_host,
+            user = name_user,
             password = password_user
         )
         print("Successful connection to MYSQL Database.")
