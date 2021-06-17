@@ -38,4 +38,24 @@ CREATE TABLE hamster (
     seller INT,
     petstore INT
 );
+#foreign key and relationship according to ER diagram
+#could be created at create step but would require specific order
+ALTER TABLE customer
+#create relationship between the tables
+ADD FOREIGN KEY(petstore)
+REFERENCES petstore(petstore_id)
+#constraint, when table is destroyed attribute will be null but record will stay
+#cascade is deleting everything- all participants linked and foreign key destroyed
+ON DELETE SET NULL;
+
+ALTER TABLE hamster
+ADD FOREIGN KEY(seller)
+REFERENCES seller(seller_id) #many to many relationship attempt
+ON DELETE SET NULL;
+
+ALTER TABLE hamster
+ADD FOREIGN KEY(petstore)
+REFERENCES petstore(petstore_id)
+ON DELETE SET NULL;
     
+
