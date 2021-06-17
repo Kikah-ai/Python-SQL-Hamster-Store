@@ -58,4 +58,21 @@ ADD FOREIGN KEY(petstore)
 REFERENCES petstore(petstore_id)
 ON DELETE SET NULL;
     
+#adding composite keys for buying, providng, selling
+CREATE TABLE customerbuy (
+	customer_id INT,
+    hammy_id INT,
+	PRIMARY KEY(customer_id,hammy_id)
+);
 
+CREATE TABLE petstoreprovide (
+	petstore_id INT,
+    hammy_id INT,
+    PRIMARY KEY(petstore_id, hammy_id)
+);
+
+CREATE TABLE sellhammy(
+	seller_id INT,
+    hammy_id INT,
+    PRIMARY KEY(seller_id, hammy_id)
+);
