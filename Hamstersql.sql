@@ -76,3 +76,8 @@ CREATE TABLE sellhammy(
     hammy_id INT,
     PRIMARY KEY(seller_id, hammy_id)
 );
+
+#populate data. If want partial values Insert ___ (___,___,___) and then add
+INSERT petstore VALUES
+	(1,"Hamster Store", "FakeAddress", "Steven Lipsky")
+;
