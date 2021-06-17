@@ -18,7 +18,7 @@ CREATE TABLE petstore (
 	petstore_id INT PRIMARY KEY,
     store_name VARCHAR(45) NOT NULL,
     address VARCHAR(65) NOT NULL,
-    owner_name(50) NOT NULL
+    owner_name VARCHAR(50) NOT NULL
 );
 CREATE TABLE customer ( 
 	customer_id INT PRIMARY KEY,
