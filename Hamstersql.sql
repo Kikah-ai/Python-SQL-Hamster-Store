@@ -81,3 +81,9 @@ CREATE TABLE sellhammy(
 INSERT petstore VALUES
 	(1,"Hamster Store", "FakeAddress", "Steven Lipsky")
 ;
+INSERT seller VALUES
+	(01, "Christine","Lopez","EnglishSpanish", "Female", "2019-01-12", "23", "0000000000"),
+    (02, "Joshua", "Cho", "EnglishKorean", "Male", "2021-04-03", "25", "1111111111"),
+    (03, "Flor", "Lipsky", "English", "Female", "2016-09-24", "47", "2222222222"),
+    (04, "Abraham", "Navarrete", "German", "Male", "2010-12-11", "57", "3333333333")
+;
