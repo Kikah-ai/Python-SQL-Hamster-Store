@@ -87,3 +87,11 @@ INSERT seller VALUES
     (03, "Flor", "Lipsky", "English", "Female", "2016-09-24", "47", "2222222222"),
     (04, "Abraham", "Navarrete", "German", "Male", "2010-12-11", "57", "3333333333")
 ;
+INSERT customer VALUES
+	(001, "Amelia", "Levy","01010101010",1) ,
+    (002, "Jesse", "Smith", "0202020202020",1) ,
+    (003, "Angelica", "Johnson", "03030303030", 1) ,
+    (004, "Hermes","Davis", "04040404040", 1) ,
+    (005, "Adrian", "Williams","05050505050", 1) ,
+    (006, "Eve", "Miller", "060606060606", 1) 
+;
