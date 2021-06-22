@@ -31,7 +31,7 @@ CREATE TABLE hamster (
 	hammy_id INT PRIMARY KEY,
     classification VARCHAR(70) NOT NULL,
     age VARCHAR(50) NOT NULL,
-    lifespan VARCHAR(50),
+    hamster_type VARCHAR(50),
     gender VARCHAR(50),
     size_inch INT,
     color VARCHAR(80),
