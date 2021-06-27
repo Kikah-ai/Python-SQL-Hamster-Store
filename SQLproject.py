@@ -56,10 +56,10 @@ SELECT *
 FROM hamster;
 """
 #connect with database and reads hamster table
-connection = enable_connection("localhost", "root", pw, db)
-outcome = analyze_query(connection, query1)
+connection = enable_connection("localhost", "root", pw, "Hamsterstore")
+outcome = analyze_data(connection, query1)
 #prints everything in table
-for outcome in outcomes:
-    print(result)
+for outcomes in outcome:
+    print(outcome)
 
 #making into a list
