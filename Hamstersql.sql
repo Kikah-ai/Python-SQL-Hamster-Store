@@ -95,3 +95,15 @@ INSERT customer VALUES
     (005, "Adrian", "Williams","05050505050", 1) ,
     (006, "Eve", "Miller", "060606060606", 1) 
 ;
+INSERT hamster VALUES
+	(0001, "Genus Allocricetulus", "One Year", "Mongolian Hamster", "Male", "3","Golden Brown", 01, 1),
+    (0002, "Genus Allocricetulus", "One Month", "Kazakh Hamster", "Female", "1","White", 02, 1),
+    (0003, "Genus Cansumys", "Two Months", "Gansu Hamster", "Male", "1", 03, 1),
+    (0004, "Genus Cricetulus", "Three Months", "Tibetan Dwarf", "Female", "1","Orange", 04, 1),
+    (0005, "Genus Cricetulus", "Four Months", "Chinese Hamster", "Male", "2", "Black", 01, 1),
+    (0006, "Genus Cricetus", "Five Months", "European Hamster", "Female", "6", "Reddish Brown", 02, 1),
+    (0007, "Genus Mesocricetus", "Six Months", "Syrian Hamster", "Male", "1", "Blonde",  03, 1),
+    (0008, "Genus Phodopus", "Seven Months", "Roborovski Hamster", "Female", "3", "Golden Brown", 02, 1),
+    (0009, "Genus Phodupus", "Eight Months", "Djungarian Hamster", "Male", "1", "White", 03, 1),
+    (0010, "Genus Tscherskia", "Nine Months", "Korean Hamster", "Female", "1", "Black", 04, 1)
+;
