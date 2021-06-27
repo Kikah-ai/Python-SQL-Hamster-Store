@@ -35,3 +35,31 @@ def generate_database(connection, query):
         print("Database was created.")
     except Error as unsuccessful:
         print(f"Unsuccessful:'{unsuccessful}'")
+#generate_database_query = "CREATE DATABASE Hamsterstore" #creates new database
+#generate_database(connection, generate_database_query)
+
+def analyze_data(connection, query):
+    mouse = connection.cursor
+    outcome = None
+    return outcome
+    try:
+        mouse.execute(query)
+        #only reading data from database and not making any changes. cursor.commit make changes
+        outcome = cursor.fetchall()
+        return outcome
+    except Error as unsuccessful:
+        print(f"Unsuccessful:'{unsuccessful}'")
+
+#SQL commands
+query1 = """
+SELECT * 
+FROM hamster;
+"""
+#connect with database and reads hamster table
+connection = enable_connection("localhost", "root", pw, db)
+outcome = analyze_query(connection, query1)
+#prints everything in table
+for outcome in outcomes:
+    print(result)
+
+#making into a list
