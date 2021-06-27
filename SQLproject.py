@@ -63,3 +63,14 @@ for outcomes in outcome:
     print(outcome)
 
 #making into a list
+empty_list = []
+#loopy loop loop
+for outcomes in outcome:
+    #returns list
+    outcome = list(outcome)
+#append adds item to the end of the list
+    empty_list.append(outcome)
+
+#pandas dataframe is created!
+column_names = ["hammy_id, classification, age, hamster_type, gender, size_inch, color, seller,petstore"]
+dataframe = pd.DataFrame(empty_list, column_names = column_names)
